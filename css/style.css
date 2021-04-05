@@ -17,12 +17,15 @@ section {
     display: block;
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
-    padding: 96px 0px;
-    background-position: center center;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0px auto;
+    top: 25%;
 }
 
 header {
-    /* height: 192px; we don't need height because the padding of the logo*/
+    height: 192px;
     background-color: #d6d6d6;
 }
 
