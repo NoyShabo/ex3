@@ -33,7 +33,7 @@ function addImage(bb) {
     bb.image = image;
     bb.appendChild(image);
     image.className = "boxImage";
-    bb.image.style.backgroundImage = "url(../images/" + svg[Math.floor(Math.random() * svg.length)] + ".svg)";
+    bb.image.style.backgroundImage = "url(images/" + svg[Math.floor(Math.random() * svg.length)] + ".svg)";
 }
 
 function createFirstBox() {
@@ -53,17 +53,17 @@ function lastNameBox() {
 
 function clickBox() {
 
-    if (this.style.backgroundColor == "rgb(255, 255, 255)") {
+    if (this.image.style.visibility == "visible") {
         this.style.backgroundColor = this.oldColor;
         this.image.style.visibility = "hidden";
         if ((this.boxNumber + 1) % 3 == 0)
-            this.star.style.backgroundImage = "url(../images/whiteStar.svg)";
+            this.star.style.backgroundImage = "url(images/whiteStar.svg)";
 
     } else {
         this.style.backgroundColor = "rgb(255, 255, 255)";
         this.image.style.visibility = "visible";
         if ((this.boxNumber + 1) % 3 == 0)
-            this.star.style.backgroundImage = "url(../images/colorStar.svg)";
+            this.star.style.backgroundImage = "url(images/colorStar.svg)";
     }
 
 }
